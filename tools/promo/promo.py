@@ -38,7 +38,7 @@ def slides_from_html(path, sub_fix=None):
             pg.wait_for_timeout(300)
             secs = pg.locator('section.slide')
             for i in range(secs.count()):
-                f = os.path.join(OUT, '_tmp_slide.png')
+                f = os.path.join(OUT, f'_tmp_slide_{os.getpid()}.png')
                 secs.nth(i).screenshot(path=f)
                 imgs.append(Image.open(f).convert('RGB').resize((W, H)))
             b.close()
