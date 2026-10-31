@@ -1,4 +1,12 @@
-# Solxce promo video pipeline
+# Solxce social content pipeline
+
+FORMAT (Oct 31, 2026): no more videos. Post SLIDESHOWS (6-slide photo carousels) and PICTURE ADS
+(single images). Each slide is rendered from the HTML decks in two sizes: tt-N.jpg = 1080x1920 for
+TikTok photo mode (autoAddMusic true) and ig-N.jpg = crop (0,210,1080,1560) = 1080x1350 for Instagram
+carousels (instagramData type POST). Files live in slides/<name>/. See tools/slides/gen5.py for the
+challenge-card / leaderboard / invite visuals and the render-to-JPG loop used for batch c01-c24.
+The video tools below are kept for reference only.
+
 
 Used by the monthly scheduled task to make and post new TikTok / Instagram Reels.
 
