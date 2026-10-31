@@ -13,6 +13,10 @@ Used by the weekly scheduled task to make and post new TikTok / Instagram Reels.
   `https://raw.githubusercontent.com/solxceofficial-hub/solxce-media/main/<path>`.
 - `posted.txt` : every video already scheduled (don't repeat a hook).
 
-Only claim real features: today's split, food tracking (calories/meals/snacks/protein), run tracking
+NEW FEATURE (Oct 31, 2026): Run challenges. Users invite friends to a challenge over 1 week, 2 weeks
+or 1 month, competing on most miles, longest total time, longest run, fastest time, or most runs.
+Feature it in roughly 1 of every 3 posts (challenge-a-friend, leaderboard, "who wins" comment bait, tag-a-friend).
+
+Only claim real features: run challenges with friends (above), today's split, food tracking (calories/meals/snacks/protein), run tracking
 (route/distance/pace/time), posting photos/videos, HYROX mode (16 splits). $9.99/mo or $79.99/yr.
 No fake testimonials.
