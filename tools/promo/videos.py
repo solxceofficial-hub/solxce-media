@@ -193,3 +193,36 @@ VIDEOS4 = [
  _v('091-why-solxce', 'drive', 'gym', "Why Solxce exists 💭 A short story about too many apps.\nLifts, food, runs and posts in one place. Link in bio.", html=f'{S3}/30-why-solxce.html'),
 ]
 VIDEOS += VIDEOS4
+
+# ---- Batch 5: run challenges (swapped into the 18:00 slots, Nov 7-30) ----
+S5 = os.path.abspath(os.path.join(TT, 'shows5'))
+_CT = ['#runchallenge', '#runtok', '#solxce', '#fitnesschallenge', '#running']
+_CI = ['#runchallenge', '#solxce', '#fitnesschallenge', '#running', '#gymbuddy']
+def _c(n, style, cap, tt=None, ig=None):
+    return dict(name=n, style=style, html=f'{S5}/{n}.html', caption=cap, tags_tt=tt or _CT, tags_ig=ig or _CI)
+VIDEOS += [
+ _c('c01-gym-partner', 'house', "Challenge your gym partner. Loser buys the coffee ☕\nNew in Solxce: invite friends to a run challenge. Link in bio.", tt=['#gymbuddy', '#runchallenge', '#solxce', '#gymtok', '#fitnesschallenge']),
+ _c('c02-most-miles-7-days', 'trap', "Most miles in 7 days. Who wins? 🏃\nStart a run challenge with friends in Solxce. Link in bio."),
+ _c('c03-pov-invite', 'phonk', "POV: your friend invites you to a run challenge 😅\nNew in Solxce: 1-week, 2-week or 1-month challenges. Link in bio."),
+ _c('c04-five-ways', 'house', "5 ways to beat your friends this week 🏆\nMost miles, longest time, longest run, fastest time or most runs. Link in bio."),
+ _c('c05-pick-length', 'drive', "1 week, 2 weeks or 1 month? Comment your pick 👇\nRun challenges with friends, now in Solxce. Link in bio."),
+ _c('c06-fastest-mile', 'trap', "Fastest time wins. Tag your rival ⚡\nChallenge friends in Solxce. Link in bio.", tt=['#runchallenge', '#runtok', '#solxce', '#speed', '#running']),
+ _c('c07-tag-friend', 'phonk', "Tag the friend you'd beat in a run challenge 👇\nThen actually invite them in Solxce. Link in bio."),
+ _c('c08-longest-run', 'drive', "Longest run challenge. Who's built for distance? 🛣️\nInvite your run club in Solxce. Link in bio.", tt=['#runchallenge', '#longrun', '#solxce', '#runtok', '#runclub'], ig=['#runchallenge', '#longrun', '#solxce', '#runclub', '#running']),
+ _c('c09-group-chat', 'trap', "Your group chat needs a run challenge 📱\nLess memes, more miles. Start one in Solxce. Link in bio."),
+ _c('c10-most-runs-month', 'house', "Most runs in a month. Consistency wins 📅\nStart a 1-month challenge with friends in Solxce. Link in bio."),
+ _c('c11-leaderboard-check', 'phonk', "Leaderboard check: day 5 of 7 👀 Who's sweating?\nRun challenges with friends in Solxce. Link in bio."),
+ _c('c12-30-seconds', 'house', "Start a run challenge in 30 seconds ⏱️\nPick a type, pick a length, invite friends. Link in bio."),
+ _c('c13-couples', 'house', "Couples run challenge. Who's winning in your house? 💑\nChallenge your partner in Solxce. Link in bio.", tt=['#couplesgoals', '#runchallenge', '#solxce', '#runtok', '#fitcouple'], ig=['#fitcouple', '#runchallenge', '#solxce', '#couplesgoals', '#running']),
+ _c('c14-coworkers', 'trap', "Office run challenge: 2 weeks, most miles 💼\nTag the coworker you'd beat. Link in bio.", tt=['#officelife', '#runchallenge', '#solxce', '#runtok', '#fitnesschallenge']),
+ _c('c15-miles-or-speed', 'phonk', "Most miles or fastest time? Comment your pick 👇\nPick from 5 run challenges in Solxce. Link in bio."),
+ _c('c16-passed-you', 'trap', "Your friend just passed you on the leaderboard 😤\nWhat are you doing about it? Link in bio."),
+ _c('c17-things-people-say', 'house', "Things people say during a run challenge 😂\nBe honest, you've said #3. Link in bio.", tt=['#runnerhumor', '#runchallenge', '#solxce', '#runtok', '#relatable']),
+ _c('c18-family-thanksgiving', 'house', "Thanksgiving week family run challenge 🦃\nRace your cousins before dinner. Link in bio.", tt=['#turkeytrot', '#runchallenge', '#solxce', '#thanksgiving', '#runtok'], ig=['#turkeytrot', '#runchallenge', '#solxce', '#thanksgiving', '#running']),
+ _c('c19-longest-time', 'drive', "Not fast? Pick the longest-time challenge 🐢\nTime on your feet wins, not pace. Link in bio."),
+ _c('c20-red-flags', 'trap', "Run challenge red flags 🚩 How many is your friend guilty of?\nStart a rematch in Solxce. Link in bio.", tt=['#redflags', '#runchallenge', '#solxce', '#runnerhumor', '#runtok']),
+ _c('c21-why-run-alone', 'drive', "Why run alone? Race your friends from anywhere 🌎\nRun challenges in Solxce. Link in bio."),
+ _c('c22-day1-day30', 'phonk', "Day 1 vs Day 30 of a monthly run challenge 📈\nSame person, different habits. Link in bio."),
+ _c('c23-which-challenge', 'house', "Which run challenge fits you? Comment your number 👇\nAll 5 are in Solxce. Link in bio."),
+ _c('c24-december-challenge', 'drive', "December starts tomorrow. Start a challenge tonight 📅\nOne month, your friends, most runs. Link in bio.", tt=['#decemberchallenge', '#runchallenge', '#solxce', '#runtok', '#fitnesschallenge']),
+]
