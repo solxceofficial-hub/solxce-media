@@ -7,6 +7,13 @@ carousels (instagramData type POST). Files live in slides/<name>/. See tools/sli
 challenge-card / leaderboard / invite visuals and the render-to-JPG loop used for batch c01-c24.
 The video tools below are kept for reference only.
 
+TIKTOK CAPTION RULE (Nov 2, 2026): TikTok photo posts show tiktokData.title in bold ABOVE the post
+text, so the hook must appear only once. Put the hook (first caption line) in tiktokData.title and
+leave it OUT of the TikTok `text` field: text = the rest of the caption + hashtags only.
+Example: title "Runners, you need to see this 🏃", text "Every route, distance, pace and time,
+logged in Solxce. Link in bio.\n\n#runtok #running #solxce #runningapp #fitnessapp".
+Instagram keeps the full caption (hook + body + hashtags) because it has no title field.
+
 
 Used by the monthly scheduled task to make and post new TikTok / Instagram Reels.
 
