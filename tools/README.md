@@ -14,6 +14,14 @@ Example: title "Runners, you need to see this 🏃", text "Every route, distance
 logged in Solxce. Link in bio.\n\n#runtok #running #solxce #runningapp #fitnessapp".
 Instagram keeps the full caption (hook + body + hashtags) because it has no title field.
 
+FACEBOOK RULE (Nov 11, 2026): the Solxce Inc Facebook page is connected in Metricool (facebookData
+1373767745825327). Each day, also schedule ONE Facebook post at 13:00 America/New_York that reuses that
+day's 12:00 Instagram carousel images (ig-N.jpg) with facebookData {"type":"POST"}. Caption = the full
+Instagram caption, but replace "Link in bio." with "Get it free on the App Store:
+https://apps.apple.com/us/app/solxce/id6820134746" and keep only 4 hashtags.
+If brand settings later show youtubeData or threadsData, also cross-post there (YouTube needs a video:
+skip it for photo slideshows).
+
 
 Used by the monthly scheduled task to make and post new TikTok / Instagram Reels.
 
