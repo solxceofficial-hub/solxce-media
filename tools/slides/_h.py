@@ -94,8 +94,8 @@ def v_vs(t, bad, good):
       <div style="display:flex;align-items:center;gap:24px;padding:28px 34px;border-radius:30px;background:{t["card"]};color:{t["cfg"]};font-size:38px;font-weight:700"><span style="color:{RED};font-size:44px">✓</span>{good}</div></div>'''
 
 def phone(t, line1, line2):
-    return wrap(t, f'''<div style="position:absolute;left:80px;right:80px;top:300px"><div class="h" style="font-size:118px">{line1}<br><span style="color:{t["acc"] if t["acc"]!=t["fg"] else RED}">{line2}</span></div></div>
-      <img src="../hand-phone.png" style="position:absolute;right:-20px;bottom:-60px;width:740px;filter:drop-shadow(0 40px 80px rgba(0,0,0,.5))">''')
+    # BANNED (Nov 12, 2026): the hand-holding-phone photo must never be used again.
+    raise RuntimeError('phone() slide removed: the hand-holding-phone photo is banned')
 
 def cta(t, line='Out now on iOS.'):
     f = 'filter:invert(1)' if t['inv'] else ''

@@ -1,5 +1,11 @@
 # Solxce social content pipeline
 
+BANNED IMAGE (Nov 12, 2026, owner's instruction): NEVER use the photo of a hand holding a phone
+showing the Solxce app (formerly tools/slides/hand-phone.png, docs/img/hand-phone.webp, the upload
+"Modern_app_showcase..."). It has been deleted everywhere. Do not recreate it, re-download it, or use
+any hand-holding-phone image in posts, slideshows, ads, posters, event art or the landing page.
+The phone() slide helper in gen*.py now raises an error on purpose; don't restore it.
+
 FORMAT (Oct 31, 2026): no more videos. Post SLIDESHOWS (6-slide photo carousels) and PICTURE ADS
 (single images). Each slide is rendered from the HTML decks in two sizes: tt-N.jpg = 1080x1920 for
 TikTok photo mode (autoAddMusic true) and ig-N.jpg = crop (0,210,1080,1560) = 1080x1350 for Instagram
